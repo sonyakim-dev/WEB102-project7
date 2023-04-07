@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  /* background-image: url("https://lh3.googleusercontent.com/xhqKhheYuCugMnNWnKtB5HfhOnmjhXUutjaTdFb5gW3_la_Anym5UUTILBI5JyMD2_g91lYchtny_Vviht5-6Gak3_Y=w640-h400-e365-rj-sc0x00ffffff"); */
+  background-image: url("https://lh3.googleusercontent.com/xhqKhheYuCugMnNWnKtB5HfhOnmjhXUutjaTdFb5gW3_la_Anym5UUTILBI5JyMD2_g91lYchtny_Vviht5-6Gak3_Y=w640-h400-e365-rj-sc0x00ffffff");
 }
 
 a {
@@ -39,7 +39,7 @@ h1 {
 }
 
 button {
-  margin: 0 10px;
+  margin: 1px 10px;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -51,7 +51,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #fff;
 }
 button:focus,
 button:focus-visible {

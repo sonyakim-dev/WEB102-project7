@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../../client";
 import Card from "../components/Card";
+import Summary from "../components/Summary";
 
 function Home() {
   const controller = new AbortController();
@@ -25,6 +26,7 @@ function Home() {
     <div className="Home">
       <br/>
       <h2>Introduce our crews!</h2>
+      <Summary data={crewList}/>
       <br/>
       <div className="Crews">
         {crewList &&

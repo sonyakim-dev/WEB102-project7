@@ -10,8 +10,9 @@ function Form({ data, onChange, onSubmit }) {
   return (
     <div className="Form">
       <form onSubmit={onSubmit}>
+        <div className="name_input">
         <label>
-          Name
+          Name:
           <input
             type="text"
             name="name"
@@ -21,21 +22,21 @@ function Form({ data, onChange, onSubmit }) {
             required
           />
         </label>
+        </div>
         <br />
 
         <div className="level_input">
           <label>
-            Level
+            Level:
             <input
               type="range"
-              min="1"
+              min="0"
               max="10"
               step="1"
               name="level"
               value={data.level}
               onChange={onChange}
               ref={inputRef}
-              required
             />
             <span>{data.level}</span>
           </label>
@@ -43,7 +44,7 @@ function Form({ data, onChange, onSubmit }) {
         <br />
 
         <div className="color_input">
-          Color
+          Color: 
           <label>
             <input
               type="radio"
@@ -134,7 +135,7 @@ function Form({ data, onChange, onSubmit }) {
           </label>
         </div>
         <br />
-        <input type="submit" />
+        <input type="submit" className="button" />
       </form>
     </div>
   );

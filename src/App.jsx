@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./router/Home";
 import Create from "./router/Create";
 import Edit from "./router/Edit";
+import About from "./router/About";
 
 function App() {
   const route = useRoutes([
@@ -18,6 +19,10 @@ function App() {
     {
       path: "/edit/:id",
       element: <Edit />,
+    },
+    {
+      path: "/about/:id",
+      element: <About />,
     },
   ]);
 

@@ -35,6 +35,7 @@ function Edit() {
   
   const handleDelete = async (e) => {
     e.preventDefault();
+    
     await supabase.from("Crewmate").delete().eq("id", id)
     window.location = "/";
   }
@@ -58,6 +59,7 @@ function Edit() {
       <br/>
       <h2>Edit Crew Info</h2>
       <Form data={crewInfo} onChange={handleChange} onSubmit={handleSubmit} />
+      <br/>
       <button style={{backgroundColor: "#CE5959"}} onClick={handleDelete}>Delete</button>
     </div>
   );

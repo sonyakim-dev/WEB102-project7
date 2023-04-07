@@ -6,7 +6,7 @@ function Create() {
   const controller = new AbortController();
   const [crewInput, setCrewInput] = useState({
     name: "",
-    level: "",
+    level: "0",
     color: "",
   });
 
@@ -24,7 +24,7 @@ function Create() {
     await supabase.from("Crewmate").insert(crewInput)
     setCrewInput({
       name: "",
-      level: "",
+      level: "0",
       color: "",
     })
     window.location = "/";

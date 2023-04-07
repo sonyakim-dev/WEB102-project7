@@ -17,10 +17,16 @@ function Card({ id, name, color, level }) {
         <strong>{name}</strong>
       </p>
       <img src={`./src/assets/${color}.png`} />
-      <p>Lv.{level}</p>
-      <Link to={`/edit/${id}`}>
-        <button>Edit</button>
-      </Link>
+      <br/>
+      
+      <div className="links" style={{}}>
+        <Link to={`/about/${id}`}>
+          <button>Detail</button>
+        </Link>
+        <Link to={`/edit/${id}`}>
+          <button>Edit</button>
+        </Link>
+      </div>
     </div>
   );
 }
