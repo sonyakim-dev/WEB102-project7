@@ -1,0 +1,94 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.Card {
+  margin: 1em;
+  padding: 1.5em;
+  width: 150px;
+}
+
+.Card img {
+  width: 80px;
+}
+
+.Card .name {
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.Crews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Form {
+}
+.Form input {
+  margin: 10px;
+  height: 30px;
+  width: 120px;
+}
+.Form .level_input input {
+  -webkit-appearance: none;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #c4c4c4;
+  outline: none;
+}
+.Form .level_input input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+.Form .level_input span {
+  position: absolute;
+  width: 20px;
+  color: #fff;
+  line-height: 30px;
+}
+.Form input[type="radio"] {
+  display: none;
+}
+.Form input[type="radio"]:checked + span {
+  border-radius: 10px;
+  background-color: rgba(201, 209, 165, 0.165);
+}
+.Form input[type="radio"]:hover + span {
+  cursor: pointer;
+}
+.Form .color_input span {
+  margin: 2px;
+  padding: 8px;
+}
+.Form input[type="submit"] {
+  width: 100px;
+  margin: 20px 0;
+}
