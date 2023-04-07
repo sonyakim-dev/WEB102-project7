@@ -2,7 +2,7 @@
 
 Submitted by: **Soyeon Kim**
 
-This web app: **insert description**
+This web app: **Read, Create, Edit, and Delete Amongus Crewmate**
 
 Time spent: **5** hours spent in total
 
